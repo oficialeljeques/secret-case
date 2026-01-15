@@ -1,0 +1,143 @@
+/*----root----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.contain{
+    object-fit: contain;
+}
+
+.cover{
+    object-fit: cover;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.grid{
+    display: grid;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.t-c{
+    text-align: center;
+}
+
+.t-e{
+    text-align: end;
+}
+
+.a-c{
+    align-items: center;
+}  
+
+.baseline{
+    align-items: baseline;
+}
+
+.j-c{
+    justify-content: center;
+}
+
+.j-e{
+    justify-content: end;
+}
+
+.j-b{
+    justify-content: space-between;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+ 
+.uppercase{
+    text-transform: uppercase;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.font-letra{
+    font-family: letra;
+}
+
+.font-papel{
+    font-family: letra-papel;
+}
+
+.bg-text-negro{
+    background:#000000f2;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.letra-negra {
+    color: #141414;
+}
+
+.letra-blanco{
+    color: #efefef;
+}
+
+.letra-rojo{
+    color: #f1031b;
+}
+
+.index-1{
+    z-index: 1;
+}
+
+.index-2{
+    z-index: 2;
+}
+
+.index-3{
+    z-index: 3;
+}
+
+.text-8{
+    font-size: 8px;
+}

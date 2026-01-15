@@ -1,0 +1,10 @@
+@font-face {
+    font-family: letra;
+    src: url(letra.otf);
+}
+
+
+@font-face {
+    font-family: letra-papel;
+    src: url(letra-papel.ttf);
+}

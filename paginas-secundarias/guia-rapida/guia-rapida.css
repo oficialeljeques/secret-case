@@ -1,0 +1,91 @@
+body{
+    background: url(../../source/img/bg-textura.png);
+}
+
+.guia{}
+.guia-cont {
+    padding: 20px 100px;
+}
+
+.guia-item {
+    margin: 0 0 15px 0;
+}
+.guia-item-cont{}
+
+.guia-title{}
+.guia-title p{}
+
+.guia-text{}
+.guia-text p{
+    font-size: 8.5px;
+}
+
+.logo{
+    width: 64px;
+}
+
+.card-social{}
+.card-social-cont{}
+
+.social-icon{
+    padding: 0 10px;
+}
+.social-icon svg{
+    stroke: #000;
+}
+.social-icon svg:hover{
+    stroke: #f1031b;
+    transition: .3s;
+}
+
+.pago-icon-list{}
+.pago-icon-list-cont{}
+
+.pago-icon-item {
+    margin: 0 20px 0 0;
+}
+.pago-icon-item svg{
+    width: 24px;
+    height: 24px;
+}
+.pago-icon-item svg:hover{
+    stroke: #f1031b;
+    transition: .3s;
+}
+
+.icon-mp:hover{
+    fill: #f1031b;
+}
+
+.pago-icon-item p{
+    font-size: 9px;
+}
+.pago-icon-item p:hover{
+    color: #f1031b;
+}
+
+.guia-text ul{}
+.guia-text li{
+    font-size: 8.5px;
+    text-align: left;
+    padding: 0 0 13px 0;
+}
+
+
+@media screen and (max-width: 850px) {
+    .guia-cont {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .guia-cont {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .guia-cont {
+        padding: 20px;
+    }
+}

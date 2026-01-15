@@ -1,0 +1,137 @@
+body{
+    background: linear-gradient(#040404e6 100%,#000),url(source/img/bg-perfil.jpg);
+}
+
+
+/**/
+.card-list{
+    padding: 35px 0px;
+}
+.card-list-cont{
+   grid-template-columns: repeat(8, 1fr);
+   gap: 15px 0;
+   justify-items: center;
+}
+/**/
+
+
+
+.card-model{}
+
+.card-model-cont{
+    width: 165px;
+    transition: all 200ms linear;
+}
+
+.card-model-cont:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.img-model{
+    width: 150px;
+    height: 216px;
+    transform: translate(4px, 5px);
+}
+.img-model img{}
+
+.card-model-cont:hover > .img-model{
+    filter: drop-shadow(0px 0px 34px #000);
+}
+
+.card-tapa{
+    width: 170px;
+    transform-origin: left;
+    transform: translate(-4px,0px);
+    transition: all 600ms linear;
+    top: 0;
+}
+.card-tapa img{
+    
+}
+
+.card-model-cont:hover > .card-tapa{
+    transform: perspective(1000px) rotateY(-105deg);
+}
+
+.card-model-cont:hover > .img-model{
+    transform: translate(-0.9px, 5px);
+}
+
+
+.card-model-cont:hover > .proximo-video{
+    transform: perspective(1000px) rotateY(-45deg);
+}
+
+.card-model-cont:hover > .proximo-video-img{
+    transform: translate(3.1px, 5px);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1284px) {
+    
+    .card-list-cont {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 1178px) {
+    
+    .card-list-cont {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 1034px) {
+    
+    .card-list-cont {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 872px) {
+    
+    .card-list-cont {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    
+    .card-list-cont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 504px) {
+    
+    .card-list-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    
+    .card-list-cont {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+

@@ -1,0 +1,383 @@
+body{
+    background: linear-gradient(#040404e6 100%, #000), url(./../source/img/bg-perfil.jpg);
+}
+
+.section-perfil{}
+.section-perfil-cont{
+    padding: 14.8% 0 200px 300px;
+    overflow-x: hidden;
+}
+
+.section-perfil-cont::-webkit-scrollbar { 
+    display: none; 
+}
+
+.perfil-element{
+}
+.perfil-element-cont{}
+
+.perfil-right{
+    transform: rotate(-0.2deg);
+}
+
+.perfil-right-cont{
+    transform: translate(-4px, 0);
+}
+
+.perfil-right-img{
+    width: 418px;
+}
+.perfil-right-img img{}
+
+
+.perfil-right-text{
+    top: 4%;
+    left: 2.5%;
+}
+.perfil-right-text-cont{ 
+    background: radial-gradient(#fff0 60%,#71717185 100%),url(../source/img/bg-textura.png);
+    width: 372px;
+    height: 520px;
+    padding: 6px 7px;
+}
+
+.perfil-right-text-cont:hover{
+   box-shadow: 0 0 7px #00000047;
+   transition:.3s;
+}
+
+.perfil-text-element{}
+.perfil-text-element-cont{
+    
+}
+
+.perfil-title{
+    padding: 7px ;
+    margin: 0 0 5px 0;
+}
+.perfil-title p{
+    font-size: 9px;
+}
+
+.perfil-info{
+    justify-content: space-between;
+}
+
+.perfil-text-items{}
+.perfil-text-items-cont{}
+
+.perfil-item{
+    margin: 0 0 3px 0;
+}
+
+.perfil-item-title{
+    width: 106px;
+    margin: 0 5px 0 0;
+}
+.perfil-item-title p{
+    font-size: 8.5px;
+    letter-spacing: -1px;
+}
+
+.perfil-item-respuesta{}
+.perfil-item-respuesta p{
+    font-size: 8.5px;
+}
+
+.perfil-item-respuesta-img{
+    width: 60px;
+}
+.perfil-item-respuesta-img img{}
+
+.perfil-text-img{
+    width: 150px;
+    height: 233px;
+}
+.perfil-text-img img{
+    filter: grayscale(0.9);
+}
+
+.perfil-descripcion{
+}
+
+.perfil-descripcion-title-text{
+    margin: 8px 0 4px 0;
+}
+.perfil-descripcion-title-text p{
+    font-size: 10px;
+}
+
+.perfil-descripcion-text{}
+.perfil-descripcion-text p{
+    font-size: 8px;
+    letter-spacing: -1px;
+}
+
+.perfil-left{
+    z-index: 11;
+    animation: retroceder 1s linear  ;
+    animation-fill-mode:forwards;
+    animation-delay: 2s ;
+    transform: translate(0px, 0.9px);
+    top: 0;
+    user-select: none;
+    pointer-events: none;
+}
+ 
+@keyframes retroceder {
+    0%{
+        z-index: 11;
+    }
+     100%{
+        z-index: 1;
+    }
+}
+ 
+.perfil-left-cont{
+  transform-origin: left;
+  transform: translate(-4px,0px);
+  transition: all 600ms linear;
+  top: 0;
+  transform: perspective(0) rotateY(0);
+  animation: tapa 2s linear  ;
+  animation-fill-mode:forwards;
+  z-index: 10;
+}
+ 
+.perfil-left-img{
+    width: 418px;
+ 
+}
+.perfil-left-img img{}
+ 
+ 
+@keyframes tapa {
+  0%{
+    transform: perspective(1000px) rotateY(0);
+}
+  100%{
+    transform: perspective(1000px) rotateY(-180deg);
+    z-index: 1;
+}
+}
+
+ 
+.perfil-left-atras{
+    top: 3.9%;
+    left: 27%;
+    justify-content: end;
+    animation: opacity-img 0s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transform: perspective(1000px) rotateY(-180deg);
+    opacity: 0;
+   
+}
+
+@keyframes opacity-img {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  
+}
+
+.perfil-left-atras-cont{
+}
+
+.perfil-left-atras-element{}
+
+.perfil-left-atras-img{ 
+    background: radial-gradient(#ffffff0f 100%,#71717100 ),url(../source/img/bg-textura.png);
+    padding: 7px 5px 20px;
+    transform: rotate(358deg);
+    border-radius: 2px;
+}
+.perfil-left-atras-img-cont {    
+    width: 155px;
+    height: 230px;
+    border-radius: 1px;
+    overflow: hidden;
+}
+.perfil-left-atras-img-cont img{}
+
+.perfil-left-atras-dec{
+    top: -5%;
+    left: 10%;
+}
+.perfil-left-atras-dec-cont {
+    width: 22px;
+    transform: rotate(343deg);
+    filter: drop-shadow(0px 0px 6px #00000024);
+}
+.perfil-left-atras-dec-cont img{}
+
+
+
+
+
+/*-----section-video-----*/
+
+.section-video{
+    margin: 120px 0 0 0;
+}
+.section-video-cont{}
+
+
+.video-2{
+    background: #000;
+}
+
+
+
+/*-----section-galeria-----*/
+.section-galeria{
+    margin: 120px 0 0 0;
+}
+.section-galeria-cont{
+    columns: 6 auto;
+    column-gap: 10px;
+}
+
+.galeria-prox{}
+.galeria-prox img{}
+
+.galeria-item{
+    margin: 0 0 10px 0;
+}
+.galeria-item img{}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .section-perfil-cont {
+        padding: 14.8% 0 200px 345px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .section-perfil-cont {
+        padding: 16% 0 200px 39%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .section-perfil-cont {
+        padding: 20% 0 200px 39%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .section-galeria-cont {
+        columns: 5 auto;
+        column-gap: 10px;
+    }
+    
+    .section-perfil-cont {
+        padding: 22% 0 200px 45%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section-perfil-cont {
+        padding: 22% 0 200px 50%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .section-perfil-cont {
+        padding: 25% 0 200px 40%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .section-galeria-cont {
+        columns: 4 auto;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .section-perfil-cont {
+        padding: 32% 0 200px 35%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .section-perfil-cont {
+        padding: 32% 0 200px 20%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .section-galeria-cont {
+        columns: 3 auto;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .section-perfil-cont {
+        padding: 32% 0 200px 10%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .section-perfil-cont {
+        padding: 32% 0 200px 2%;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .section-perfil-cont {
+        padding: 0 0 65px 30px;
+    }
+
+    .perfil-right-text-cont {
+        width: 350px;
+    }
+
+    .perfil-item-title {
+        width: 94px;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .section-galeria-cont {
+        columns: 2 auto;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .section-perfil-cont {
+        padding: 0 0 65px 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .section-perfil-cont {
+        padding: 0 0 65px 69px;
+    }
+
+    .perfil-right-text-cont {
+        width: 340px;
+    }
+}
+
+
+
+
+
